@@ -15,6 +15,25 @@ fun main() {
     whenControl(5)
     forControl(intArrayOf(1,2,3,4,5,6))
     whileControl(2)
+    eval(100) // 多层if-else if
+}
+
+fun eval(number: Number) {
+    if (number is Int) {
+        println("this is int number")
+    } else if (number is Double) {
+        println("this is double number")
+    } else if (number is Float) {
+        println("this is float number")
+    } else if (number is Long) {
+        println("this is long number")
+    } else if (number is Byte) {
+        println("this is byte number")
+    } else if (number is Short) {
+        println("this is Short number")
+    } else {
+        throw IllegalArgumentException("invalid argument")
+    }
 }
 
 fun whileControl(x: Int){

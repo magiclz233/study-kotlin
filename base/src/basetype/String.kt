@@ -6,9 +6,6 @@ package basetype
  * @version 1.0
  * @date 2020/12/4 : 11:31
  */
-class String {
-
-}
 
 fun main() {
     val s = "Hello World!"
