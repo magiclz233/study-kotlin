@@ -36,5 +36,16 @@ fun main() {
     val hexBytes = 0xFF_EC_DE_5E
     val bytes = 0b11010010_01101001_10010100_10010010
 
+    // 表示方式
+    val aa :Int = 100
+    val box : Int? = aa
+    val boxA : Int? = aa
+
+    val bb: Int = 10000
+    val boxedB: Int? = bb
+    val anotherBoxedB: Int? = bb
+
+    println(box == boxA)
+    println(boxedB == anotherBoxedB)
 
 }
